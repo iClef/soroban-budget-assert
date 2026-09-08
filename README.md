@@ -291,21 +291,4 @@ Join the discussion and get support:
 
 ---
 
-## 🛠️ Contributing
 
-We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started, and our [SECURITY.md](SECURITY.md) for reporting vulnerabilities.
-
-### 🧑‍💻 Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=Tollcraft/soroban-budget-assert)](https://github.com/Tollcraft/soroban-budget-assert/graphs/contributors)
-
-## Generating the man page
-
-The CLI man page is generated from the same clap definition as `--help`, so the docs stay in sync without a handwritten copy.
-
-```bash
-cargo run -p cargo-budget-report --bin generate-manpage -- cargo-budget-report.1
-```
-
-This writes the rendered `cargo-budget-report` man page to the chosen output path.
-// Stellar Wave #494

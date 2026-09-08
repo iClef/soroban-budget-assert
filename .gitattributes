@@ -1,10 +1,18 @@
-*.rs text eol=lf
-*.json text eol=lf
-*.toml text eol=lf
-*.md text eol=lf
-*.ps1 text eol=lf
-*.sh text eol=lf
-*.yml text eol=lf
-*.yaml text eol=lf
-Cargo.lock -text
-*.wasm binary
+* text=auto
+
+# Language detection
+*.rs linguist-language=Rust
+*.toml linguist-language=TOML
+*.md linguist-language=Markdown
+*.yml linguist-language=YAML
+*.yaml linguist-language=YAML
+*.json linguist-language=JSON
+*.ps1 linguist-language=PowerShell
+
+# Vendored files
+vendor/ linguist-vendored
+
+# Generated files
+*.wasm linguist-generated=true
+target/ linguist-generated=true
+site/dashboard.html linguist-generated=true
